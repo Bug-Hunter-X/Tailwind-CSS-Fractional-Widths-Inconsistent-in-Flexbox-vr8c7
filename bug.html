@@ -1,0 +1,7 @@
+```html
+<div class="flex">
+  <div class="bg-red-500 p-4 w-1/2"></div>
+  <div class="bg-blue-500 p-4 w-1/2"></div>
+</div>
+```
+This code snippet uses Tailwind CSS classes to create a flexbox layout with two divs that take up half the width each. However, depending on the content inside each div, you might encounter unexpected behavior. If one div has significantly more content than the other, the divs won't occupy exactly half the width.  This is because `w-1/2` is a fraction of the available space and this fraction will change based on the content. This can lead to unexpected layouts, particularly if the content changes dynamically.
